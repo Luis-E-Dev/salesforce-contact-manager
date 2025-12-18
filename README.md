@@ -133,10 +133,10 @@ sf apex run test --test-level RunLocalTests --result-format human --code-coverag
 
 ## 📸 Screenshots
 
-<img width="1660" height="792" alt="Screenshot 2025-12-18 at 10 58 46" src="https://github.com/user-attachments/assets/83ef5806-29ba-4a79-a537-19686ca0ab6c" />
-<img width="1666" height="666" alt="Screenshot 2025-12-18 at 10 58 00" src="https://github.com/user-attachments/assets/34688442-0666-4f8e-b461-17c58cab13a5" />
-<img width="1641" height="673" alt="Screenshot 2025-12-18 at 10 57 24" src="https://github.com/user-attachments/assets/f6d36c34-a011-4e94-a121-96131de9a23c" />
 <img width="1662" height="585" alt="Screenshot 2025-12-18 at 10 57 05" src="https://github.com/user-attachments/assets/e72855ce-52e4-4f48-88cb-6384752ff99e" />
+<img width="1641" height="673" alt="Screenshot 2025-12-18 at 10 57 24" src="https://github.com/user-attachments/assets/f6d36c34-a011-4e94-a121-96131de9a23c" />
+<img width="1666" height="666" alt="Screenshot 2025-12-18 at 10 58 00" src="https://github.com/user-attachments/assets/34688442-0666-4f8e-b461-17c58cab13a5" />
+<img width="1660" height="792" alt="Screenshot 2025-12-18 at 10 58 46" src="https://github.com/user-attachments/assets/83ef5806-29ba-4a79-a537-19686ca0ab6c" />
 
 
 ## 🎓 What I Learned
@@ -146,6 +146,7 @@ sf apex run test --test-level RunLocalTests --result-format human --code-coverag
 - Managing component state and data flow
 - Creating responsive layouts with SLDS
 - Best practices for error handling and user feedback
+- How valuable are test classes to make sure code works as expected
 
 ## 🔜 Future Enhancements
 
