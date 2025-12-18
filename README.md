@@ -152,9 +152,7 @@ sf apex run test --test-level RunLocalTests --result-format human --code-coverag
 
 - [ ] Inline editing capabilities
 - [ ] Create new contacts from the component
-- [ ] Export contacts to CSV
 - [ ] Email/Call quick actions
-- [ ] Favorites/Recent contacts
 - [ ] Advanced filtering with date ranges
 
 ## 📝 License
