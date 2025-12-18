@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Contact Search & Manager" icon-name="standard:contact">
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" label="Search Contacts" placeholder="Search by name, division or title" onchange={handleSearchChange} value={searchTerm}></lightning-input>
+            <lightning-input type="text" label="Account Filter" placeholder="Filter by account" onchange={handleAccountFilterChange} value={accountFilter}></lightning-input>
+            <lightning-input type="text" label="Title Filter" placeholder="Filter by title" onchange={handleTitleFilterChange} value={titleFilter}></lightning-input>
+            <lightning-input type="text" label="Department Filter" placeholder="Filter by department" onchange={handleDepartmentFilterChange} value={departmentFilter}></lightning-input>
+
+            <lightning-button label="Clear Search" onclick={handleClearSearch}></lightning-button>
+        </div>
+
+        <lightning-spinner alternative-text="Loading" variant="brand" size="medium" if:true={isLoading}></lightning-spinner>
+        <template if:true={hasContacts}>
+            <div class="slds-p-around_medium">
+                <template for:each={contacts} for:item="contact">
+                    <div key={contact.Id} class="contact-card">
+                        <lightning-layout-item>
+                            <lightning-card title={contact.Name} icon-name="standard:contact">
+                                <p>Account: {contact.Account.Name}</p>
+                                <p>Title: {contact.Title}</p>
+                                <p>Department: {contact.Department}</p> 
+                                <p><a href={contact.detailUrl}>See Contact's Full Details</a></p>
+                            </lightning-card>
+                        </lightning-layout-item>
+                    </div>
+                </template>
+            </div>
+        </template>
+        <template if:false={hasContacts}>
+            <div class="slds-p-around_medium">
+                <p>No contacts found.</p>
+            </div>
+        </template>
+        <template if:true={error}>
+            <div class="slds-p-around_medium">
+                <p>An error occurred: {error}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
